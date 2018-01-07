@@ -194,7 +194,7 @@ if __name__ == '__main__':
     config = TCNNConfig()
     if not os.path.exists(vocab_dir):  # 如果不存在词汇表，重建
         build_vocab(train_dir, vocab_dir, config.vocab_size)
-    categories, cat_to_id = read_category()
+    categories, cat_to_id,_ = read_category()
     print(categories)
     words, word_to_id = read_vocab(vocab_dir)
     config.vocab_size = len(words)

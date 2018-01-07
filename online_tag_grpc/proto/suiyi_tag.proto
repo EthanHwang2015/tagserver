@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.suiyi.tagserver";
+option java_outer_classname = "TagServerProto";
+option objc_class_prefix = "TAGS";
+
+package tagserver;
+
+service TagServer {
+    rpc Tag (TagRequest) returns (TagResponse) {}
+}
+
+message TagRequest {
+    string content = 1;
+}
+
+message TagResponse {
+    string content = 1;
+}
+

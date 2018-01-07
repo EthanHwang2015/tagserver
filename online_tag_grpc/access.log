@@ -1,0 +1,10 @@
+E0107 22:39:28.824315902    9309 ev_epollex_linux.cc:1482]   Skipping epollex becuase GRPC_LINUX_EPOLL is not defined.
+E0107 22:39:28.824359604    9309 ev_epoll1_linux.cc:1261]    Skipping epoll1 becuase GRPC_LINUX_EPOLL is not defined.
+E0107 22:39:28.824365371    9309 ev_epollsig_linux.cc:1761]  Skipping epollsig becuase GRPC_LINUX_EPOLL is not defined.
+2018-01-07 22:39:28.984643: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-01-07 22:39:28.984702: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-01-07 22:39:28.984709: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-01-07 22:39:28.984715: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-01-07 22:39:28.984721: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX512F instructions, but these are available on your machine and could speed up CPU computations.
+2018-01-07 22:39:28.984727: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+Model loaded!

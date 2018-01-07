@@ -51,12 +51,24 @@ def read_vocab(vocab_dir):
 
 def read_category():
     """读取分类目录，固定"""
-    categories = [u'物流',u'代办',u'运动',u'游戏',u'社交',u'出行',
-        u'学习',u'维修',u'招聘',u'家教',u'信息咨询',u'租房',u'美容',
-        u'宠物',u'各种无聊',u'代课点名',u'租借',u'求购',u'出租',u'出售']
+    #####v1.0 类目
+    #categories = [u'物流',u'代办',u'运动',u'游戏',u'社交',u'出行',
+        #u'学习',u'维修',u'招聘',u'家教',u'信息咨询',u'租房',u'美容',
+        #u'宠物',u'各种无聊',u'代课点名',u'租借',u'求购',u'出租',u'出售']
+    #####
+
+    #####v2.0 类目
+    categories = [u'广告',u'刷单',u'屏蔽',u'物流',u'代办',u'代课',
+        u'运动',u'游戏',u'社交',u'出行',u'学习',u'维修',u'招聘',
+        u'家教',u'咨询',u'租售',u'求购',u'美容',u'宠物',u'无聊']
+
+    categories_code = ['advert', 'brush', 'mask', 'logistics', 'agent', 'class',
+        'sports', 'game', 'social', 'goout', 'learn', 'repair', 'recruit',
+        'teacher', 'consult', 'lease', 'buy', 'beauty', 'pet', 'bored']
+
     cat_to_id = dict(zip(categories, range(len(categories))))
 
-    return categories, cat_to_id
+    return categories, cat_to_id, categories_code
 
 def to_words(content, words):
     """将id表示的内容转换为文字"""
